@@ -1,5 +1,14 @@
 import React from "react"
+import Layout from "../components/Layout"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Home = () => {
+  return (
+    <Layout>
+      <main>
+        <section></section>
+      </main>
+    </Layout>
+  )
 }
+
+export default Home
