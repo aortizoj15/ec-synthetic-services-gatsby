@@ -1,13 +1,12 @@
 import React from 'react'
-// import Nav from '../components/Nav'
+import Nav from '../components/Nav'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="">
-    {/* <div className="container mx-auto text-center p-0"> */}
-        {/* <Nav /> */}
-        <p>This site is under development.</p>
-      <div className="">
+      {/* <div className="container mx-auto text-center p-0"> */}
+      <Nav className="w-screen" />
+      <div className="container mx-auto">
         {children}
       </div>
       <div className="">
