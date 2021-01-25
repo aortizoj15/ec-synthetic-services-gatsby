@@ -6,9 +6,7 @@ const Layout = ({ children }) => {
     <div className="">
       {/* <div className="container mx-auto text-center p-0"> */}
       <Nav className="w-screen" />
-      <div className="container mx-auto">
-        {children}
-      </div>
+      {children}
       <div className="">
         <p>Made with Gatsby by Alexis Ortiz Ojeda</p>
       </div>
