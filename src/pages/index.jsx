@@ -6,7 +6,7 @@ const Home = () => {
     <Layout>
       <main className="">
         <section className="bg-gray-300 p-5 text-center">
-          <p className="">EC Synthetic Services specializes in the repairing and refinishing of bathtubs, bathroom & kitchen sinks, and much more within Southern California.
+          <p className="font-medium">EC Synthetic Services specializes in the repairing and refinishing of bathtubs, bathroom & kitchen sinks, and much more within Southern California.
           </p>
           <p className="pt-2">
             Contact us for more information.</p>
@@ -18,7 +18,7 @@ const Home = () => {
               ecsyntheticservices@gmail.com
               </a>
           </p>
-          <p className="pt-4">Lic # 1069990</p>
+          <p className="pt-4">License No. 1069990</p>
         </section>
       </main>
     </Layout>
