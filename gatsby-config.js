@@ -7,6 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -15,6 +17,13 @@ module.exports = {
           require('./tailwind.config')
         ]
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`,
+      },
     }
   ],
 }
