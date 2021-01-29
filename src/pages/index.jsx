@@ -20,36 +20,9 @@ export const query = graphql`
   }
 `
 
-const homeData = {
-  text_logo: {
-    id: 0,
-    images: {
-      text_logo: {
-        id: 0,
-        name: 'text_logo_home.png'
-      }
-    }
-  },
-  services: {
-    id: 1,
-    images: {
-      bathtub_home: {
-        id: 0,
-        name: 'bathtub_home.png'
-      },
-      kitchen_home: {
-        id: 1,
-        name: 'kitchen_home.png'
-      },
-    }
-  }
-}
-
-
 const Home = ({ data }) => {
   const files = data.allFile.edges
   const homeImages = files.filter(file => file.node.name.includes('home'))
-  console.log('homeImages: ', homeImages)
   const bathtub_img = homeImages.find(img => img.node.name === 'bathtub_home')
   const bathtub_logo_img = homeImages.find(img => img.node.name === 'bathtub_logo_home')
   const kitchen_img = homeImages.find(img => img.node.name === 'kitchen_home')
@@ -79,7 +52,12 @@ const Home = ({ data }) => {
           <Img className="max-w-sm mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
         </section>
         <section className="bg-gradient-to-b from-gray-400 to-white p-5">
-
+          <p>Services For You</p>
+          <div>
+            <div><Img className="max-w-sm" fluid={bathtub_img.node.childImageSharp.fluid} alt="bathtub" /><p>Bathtub & Tile Refinishing</p></div>
+            <div><Img className="max-w-sm" fluid={kitchen_img.node.childImageSharp.fluid} alt="kitchen" /><p>Kitchen Countertops</p></div>
+            <div><Img className="max-w-sm" fluid={sink_img.node.childImageSharp.fluid} alt="sink" /><p>Sink Refinishing</p></div>
+          </div>
         </section>
         <section className="bg-gradient-to-b from-gray-400 to-white p-5">
           <div className="">
@@ -91,10 +69,27 @@ const Home = ({ data }) => {
           </div>
         </section>
         <section className="bg-gradient-to-b from-gray-400 to-white p-5">
-
+          <div>
+            <p>Contact Information</p>
+            <Img className="max-w-sm" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
+          </div>
+          <div>
+            <p className="pt-4">
+              <span className="font-medium">Phone Number: </span>
+            (818) 264-8057
+          </p>
+            <p className="pt-4">
+              <span className="font-medium">Email: </span>
+              <a className="hover:underline" href="mailto:ecsyntheticsservices@gmail.com">
+                ecsyntheticservices@gmail.com
+              </a>
+            </p>
+          </div>
         </section>
         <section className="bg-gradient-to-b from-gray-400 to-white p-5">
-
+          <div><p>Serving All Over California</p></div>
+          <div><Img className="max-w-sm" fluid={bathtub_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Bathtub Logo" /></div>
+          <div><p>Call Us Today For Your Free Quote!</p></div>
         </section>
       </main>
     </Layout>
