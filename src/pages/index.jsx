@@ -70,7 +70,7 @@ const Home = ({ data }) => {
             </div>
           </div>
         </section>
-        <hr className="border-2 border-blue-900" />
+        <hr className="border-2 border-blue-900 max-w-sm mx-auto" />
         <section className="">
           <div className="">
             <Img className="max-w-sm" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
@@ -106,7 +106,7 @@ const Home = ({ data }) => {
           <div><p>Call Us Today For Your Free Quote!</p></div>
         </section>
       </main>
-    </Layout>
+    </Layout >
   )
 }
 
