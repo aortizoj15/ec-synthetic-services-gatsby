@@ -8,20 +8,21 @@ const exitIcon = (<svg className="h-6 w-6 bg-red-500" xmlns="http://www.w3.org/2
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
 </svg>)
 const Nav = () => {
-  const [isClicked, setIsClicked] = useState(false)
+  // const [isClicked, setIsClicked] = useState(false)
+  // const handleClick = () => setIsClicked(!isClicked)
   return (
     <nav className="bg-blue-900 shadow-lg">
       <div className="container mx-auto">
         <div className="sm:flex justify-between">
           <Link className="text-white text-2xl md:text-3xl font-bold p-3" to="/">EC Synthetic Services</Link>
-          <div onClick={() => setIsClicked(!isClicked)}>
+          {/* <div onClick={handleClick}>
             {isClicked ? exitIcon : menuIcon}
           </div>
           <ul className="hidden md:block text-gray-400 sm:self-center text-xl border-t sm:border-none" >
             <li className="sm:inline-block"><Link to="/" className="p-3 hover:text-white">Home</Link></li>
             <li className="sm:inline-block"><Link to="/services" className="p-3 hover:text-white">Services</Link></li>
             <li className="sm:inline-block"><Link to="/gallery" className="p-3 hover:text-white">Gallery</Link></li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </nav>
