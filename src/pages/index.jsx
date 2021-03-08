@@ -30,8 +30,9 @@ const Home = ({ data }) => {
   const text_logo_img = homeImages.find(img => img.node.name === 'text_logo_home')
   return (
     <Layout>
-      <main className="text-center">
-        {/* <main className="bg-gradient-to-b from-gray-400 via-gray-300 to-gray-100 p-5 text-center"> */}
+      {/* <main className="text-center"> */}
+      {/* <main className="bg-gradient-to-b from-gray-400 via-gray-300 to-gray-100 p-5 text-center"> */}
+      <main className="bg-gradient-to-b from-gray-400 via-gray-300 to-gray-100 p-5 text-center">
         {/* <section className="bg-gray-300 p-5 text-center">
           <p className="font-medium">EC Synthetic Services specializes in the repairing and refinishing of bathtubs, bathroom & kitchen sinks, and much more within Southern California.
           </p>
@@ -54,7 +55,8 @@ const Home = ({ data }) => {
           <Img className="max-w-sm md:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
         </section>
         {/* <hr className="border-2 border-blue-900 max-w-sm mx-auto my-5" /> */}
-        <section className="bg-gray-400 py-5">
+        {/* <section className="bg-gray-400 py-5"> */}
+        <section className="py-5">
           <p className="text-3xl font-medium">Services For You</p>
           <div className="">
             <div className="mt-5">
@@ -72,22 +74,28 @@ const Home = ({ data }) => {
           </div>
         </section>
         {/* <hr className="border-2 border-blue-900 max-w-sm mx-auto my-5" /> */}
-        <section className="pb-5">
-          <div className="">
-            <Img className="max-w-sm md:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
+        {/* <section className="py-5 md:flex md:justify-evenly w-3/4 mx-auto"> */}
+        {/* <section className="py-5"> */}
+        <section className="py-5 md:grid md:grid-cols-2 gap-0">
+          <div className="hidden md:inline-block w-full md:w-1/2 my-auto">
+            {/* <Img className="max-w-sm md:max-w-lg mx-auto md:mx-0 md:my-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" /> */}
+            <Img className="max-w-md md:max-w-lg ml-12 mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
           </div>
-          <div className="text-center">
-            <p className="text-3xl font-medium">About Us</p>
-            <p className="text-base font-normal leading-relaxed pt-3 max-w-prose mx-auto">EC Synthetic Services was founded by Edwin Vasquez, after working for many reputable companies for over 10 years as a sub-contractor. It was in 2018, when he decided to branch out on his own and create his own company. Here at EC Synthetic Services, we are committed to making sure that our clients are satisfied with every project. We take pride and ownership treating each job as if it was our very own home. Contact us today for more information!</p>
+          <div className="text-center my-auto">
+            <p className="text-3xl md:text-5xl font-medium">About Us</p>
+            <p className="text-base font-normal leading-relaxed pt-3 max-w-prose mx-auto md:text-lg lg:text-xl">EC Synthetic Services was founded by Edwin Vasquez, after working for many reputable companies for over 10 years as a sub-contractor. It was in 2018, when he decided to branch out on his own and create his own company. Here at EC Synthetic Services, we are committed to making sure that our clients are satisfied with every project. We take pride and ownership treating each job as if it was our very own home. Contact us today for more information!</p>
           </div>
         </section>
         {/* <hr className="border-2 border-blue-900 max-w-sm mx-auto my-5" /> */}
-        <section className="bg-gray-400 py-5">
+        {/* <section className="bg-gray-400 py-5 flex justify-evenly"> */}
+        <section className="py-5">
           <div>
             <p className="text-3xl font-medium">Contact Information</p>
-            <Img className="max-w-sm md:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
+            <div className="hidden md:inline-block w-full md:w-1/2 my-auto">
+              <Img className="max-w-sm md:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
+            </div>
           </div>
-          <div>
+          <div className="my-auto">
             <p className="pt-4">
               <span className="font-medium">Phone Number: </span>
             (818) 264-8057
