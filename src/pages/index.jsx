@@ -89,7 +89,7 @@ const Home = ({ data }) => {
         </section>
         {/* <hr className="border-2 border-blue-900 max-w-sm mx-auto my-5" /> */}
         {/* <section className="bg-gray-400 py-5 flex justify-evenly"> */}
-        <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 divide-x-2 divide-black">
+        <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 lg:divide-x-2 lg:divide-black">
           <div className="">
             {/* <div className="lg:border-r-4 border-black"> */}
             <p className="text-2xl md:text-3xl lg:text-5xl font-medium text-center lg:flex lg:flex-col">
