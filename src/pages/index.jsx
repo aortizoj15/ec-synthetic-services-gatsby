@@ -54,33 +54,23 @@ const Home = ({ data }) => {
           </div>
         </section>
         {/* * About */}
-        <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 gap-2">
-          <div className="hidden lg:inline-block">
-            <Img className="lg:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
-          </div>
-          <div className="text-center my-auto">
-            <p className="text-2xl md:text-3xl lg:text-5xl font-medium">About Us</p>
-            <p className="text-base font-normal leading-relaxed pt-3 max-w-prose mx-auto md:text-lg">EC Synthetic Services was founded by Edwin Vasquez, after working for many reputable companies for over 10 years as a sub-contractor. It was in 2018, when he decided to branch out on his own and create his own company. Here at EC Synthetic Services, we are committed to making sure that our clients are satisfied with every project. We take pride and ownership treating each job as if it was our very own home. Contact us today for more information!</p>
-          </div>
+        <section className="py-5 lg:py-10 text-center my-auto">
+          <p className="text-2xl md:text-3xl lg:text-5xl font-medium">About Us</p>
+          <p className="text-base font-normal leading-relaxed pt-3 max-w-prose mx-auto md:text-lg">EC Synthetic Services was founded by Edwin Vasquez, after working for many reputable companies for over 10 years as a sub-contractor. It was in 2018, when he decided to branch out on his own and create his own company. Here at EC Synthetic Services, we are committed to making sure that our clients are satisfied with every project. We take pride and ownership treating each job as if it was our very own home. Contact us today for more information!</p>
         </section>
         {/* * Contact */}
         <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 lg:divide-x-2 lg:divide-black">
-          <div className="">
-            <p className="text-2xl md:text-3xl lg:text-5xl font-medium text-center lg:flex lg:flex-col">
-              <span>Contact </span>
-              <span> Information</span>
-            </p>
-            <div className="hidden lg:inline-block max-w-sm lg:max-w-md mx-auto w-full">
-              <Img className="" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
-            </div>
-          </div>
+          <p className="text-2xl md:text-3xl lg:text-5xl font-medium text-center lg:flex lg:flex-col">
+            <span>Contact </span>
+            <span> Information</span>
+          </p>
           <div className=" lg:grid lg:grid-cols-1 gap-0">
             <p className="pt-4 lg:text-xl">
               <span className="lg:text-2xl font-medium">Phone Number: </span><br />
                 (818) 264-8057
             </p>
             <p className="pt-4 lg:text-xl">
-              <span className="lg:text-2xl font-medium">Email: </span><br />
+              <span className="lg:text-2xl font-medium">Email Address: </span><br />
               <a className="hover:underline" href="mailto:ecsyntheticsservices@gmail.com">
                 ecsyntheticservices@gmail.com
               </a>
@@ -89,9 +79,9 @@ const Home = ({ data }) => {
         </section>
         {/* * Contact Logo */}
         <section className="py-5 lg:py-10">
-          <div><p className="text-2xl md:text-3xl font-medium pb-5">Serving All Over California</p></div>
-          <div><Img className="max-w-sm md:max-w-md lg:max-w-lg mx-auto" fluid={bathtub_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Bathtub Logo" /></div>
           <div><p className="text-2xl md:text-3xl font-medium pt-5">Call Us Today For Your Free Quote!</p></div>
+          <div><Img className="max-w-sm md:max-w-md lg:max-w-lg mx-auto" fluid={bathtub_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Bathtub Logo" /></div>
+          <div><p className="text-2xl md:text-3xl font-medium pb-5">Serving All Over Southern California</p></div>
         </section>
       </main>
     </Layout >
