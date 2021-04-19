@@ -31,9 +31,11 @@ const Home = ({ data }) => {
   return (
     <Layout>
       <main className="p-5 sm:mx-12 lg:mx-20 text-center">
+        {/* * Initial Logo*/}
         <section className="">
           <Img className="max-w-sm mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
         </section>
+        {/* * Services */}
         <section className="py-5 lg:pb-10">
           <p className="text-2xl md:text-3xl lg:text-5xl font-medium">Services For You</p>
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
@@ -51,6 +53,7 @@ const Home = ({ data }) => {
             </div>
           </div>
         </section>
+        {/* * About */}
         <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 gap-2">
           <div className="hidden lg:inline-block">
             <Img className="lg:max-w-lg mx-auto" fluid={text_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Logo" />
@@ -60,6 +63,7 @@ const Home = ({ data }) => {
             <p className="text-base font-normal leading-relaxed pt-3 max-w-prose mx-auto md:text-lg">EC Synthetic Services was founded by Edwin Vasquez, after working for many reputable companies for over 10 years as a sub-contractor. It was in 2018, when he decided to branch out on his own and create his own company. Here at EC Synthetic Services, we are committed to making sure that our clients are satisfied with every project. We take pride and ownership treating each job as if it was our very own home. Contact us today for more information!</p>
           </div>
         </section>
+        {/* * Contact */}
         <section className="py-5 lg:py-10 lg:grid lg:grid-cols-2 lg:divide-x-2 lg:divide-black">
           <div className="">
             <p className="text-2xl md:text-3xl lg:text-5xl font-medium text-center lg:flex lg:flex-col">
@@ -83,6 +87,7 @@ const Home = ({ data }) => {
             </p>
           </div>
         </section>
+        {/* * Contact Logo */}
         <section className="py-5 lg:py-10">
           <div><p className="text-2xl md:text-3xl font-medium pb-5">Serving All Over California</p></div>
           <div><Img className="max-w-sm md:max-w-md lg:max-w-lg mx-auto" fluid={bathtub_logo_img.node.childImageSharp.fluid} alt="EC Synthetic Services Bathtub Logo" /></div>
