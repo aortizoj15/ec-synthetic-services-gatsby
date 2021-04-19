@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
     <div className="bg-gradient-to-b from-gray-400 via-gray-300 to-gray-100">
       {/* <div className="container mx-auto text-center p-0"> */}
       <Nav className="w-screen" />
-      {children}
+      <div className="mx-10">
+        {children}
+      </div>
       {/* <div className="">
         <p>Made with Gatsby by Alexis Ortiz Ojeda</p>
       </div> */}
