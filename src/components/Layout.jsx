@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <div className="bg-gradient-to-b from-gray-400 via-gray-300 to-gray-100">
       {/* <div className="container mx-auto text-center p-0"> */}
       <Nav className="w-screen" />
-      <div className="mx-10">
+      <div className="mx-10 h-full">
         {children}
       </div>
       {/* <div className="">
